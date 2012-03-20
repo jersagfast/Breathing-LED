@@ -7,6 +7,7 @@ LED is attached to pin 11 in series with a 5.6K resistor
 */
 int i = 0;
 void setup() { // bring the LED up nicely from being off
+  pinMode(11, OUTPUT);
   for(i = 0 ; i <= 15; i+=1)
   {
     analogWrite(11, i);
